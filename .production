@@ -1,5 +1,5 @@
 PROJECT=gunicorn
-DOMAIN=seva.game-semse.ru
+DOMAIN=seva.game-sense.ru
 SERVICE_NAME=seva
 
 # Сетевые настройки
