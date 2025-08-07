@@ -123,7 +123,8 @@ body {
     display: flex;
     align-items: center;
     font-family: var(--font-heading);
-    font-size: 24px;
+    font-size: 30px;
+    margin-right: 10px;
     font-weight: 700;
     color: var(--white);
     text-decoration: none;
@@ -133,8 +134,8 @@ body {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     margin-right: 10px;
 }
 .logo-icon img {
@@ -148,7 +149,8 @@ body {
     display: flex;
     list-style: none;
     gap: 35px;
-    padding-top: 10px;
+    padding-top: 20px;
+    margin-left: 175px;
     
 }
 
@@ -180,7 +182,8 @@ body {
 }
 
 .header-cta {
-    margin-left: auto;
+    margin-left: 450px;
+    padding-top: 10px;
 }
 
 .mobile-menu-btn {
