@@ -108,10 +108,10 @@ body {
     width: 100%;
     z-index: 1000;
     padding: 20px 0;
-    background-color: rgba(42, 42, 42, 0.95);
-    box-shadow: var(--shadow);
+/*     background-color: rgba(42, 42, 42, 0.95); */
+/*     box-shadow: var(--shadow); */
     transition: var(--transition);
-    backdrop-filter: blur(10px);
+/*     backdrop-filter: blur(10px); */
 }
 
 .header.scrolled {
