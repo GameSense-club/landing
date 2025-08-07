@@ -1,4 +1,4 @@
-# Основные настройки
+PROJECT=gunicorn
 DOMAIN=seva.game-semse.ru
 SERVICE_NAME=seva
 
