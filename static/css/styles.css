@@ -248,6 +248,12 @@ body {
     align-items: center;
     overflow: hidden;
 }
+.no-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
 
 #particles-js {
     position: absolute;
