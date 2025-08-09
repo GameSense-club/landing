@@ -7,7 +7,7 @@ def index():
     return render_template("index.html")
 
 @app.route('/promotions')
-def index():
+def promotions():
     return render_template("promotions.html")
 
 
