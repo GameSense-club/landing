@@ -1,0 +1,22 @@
+.icon-accenc-bg{
+	color: var(--white);
+	padding: 20px;
+	border-radius: 64px;
+	background: var(--gradient-purple);
+}
+.icon-accent{
+	color: var(--purple-accent);
+}
+
+.icon-link{
+	text-align: center;
+	width: 48px;
+	height: 48px;
+	color: var(--white);
+	padding: 10px;
+	border-radius: 64px;
+	background: rgba(255, 255, 255, 0.1);
+	box-sizing: border-box;
+}
+
+body>footer .icon-link{margin-right: 10px}
