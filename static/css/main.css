@@ -10,10 +10,12 @@
 	padding: 0;
 	margin: 0;
 	font-family: var(--font-main);
+	transition: var(--transition);
 }
 
 body{
 	background-color: var(--bg-color);
+	visibility: hidden;
 }
 
 body>header {
@@ -29,6 +31,7 @@ body>header {
 	align-items: center;
 	justify-content: space-between;
 	box-sizing: border-box;
+	transition: var(--transition);
 }
 
 body>header>a>h4{font-family: var(--font-heading);}
@@ -50,7 +53,6 @@ main{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/*margin-top: 100px;*/
 	padding: 0 20px;
 }
 
@@ -135,7 +137,7 @@ p>span{font-weight: normal;}
 .orbitron{font-family:var(--font-heading)}
 
 
-nav{}
+nav{cursor: pointer;}
 
 section{
 	width: 100%;
@@ -172,7 +174,7 @@ section>header>.line{width: 80px}
 
 button, .button{
 	color: white;
-    /*position: relative;*/
+    position: relative;
     padding: 12px 24px;
     background: var(--gradient-purple);
     overflow: hidden;
@@ -185,8 +187,9 @@ button, .button{
     text-decoration: none;
     transition: var(--transition);
     border-width: 2px;
-    border-color: transparent;
-    border-image: initial;
+    border-color: none;
+    border-image: none;
+    border:none;
 }
 
 .outline-button{

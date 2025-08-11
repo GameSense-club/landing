@@ -47,49 +47,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Изменение шапки при скролле
-    window.addEventListener('scroll', function() {
-        const header = document.querySelector('.header');
-        if (window.scrollY > 100) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
+    
 
-    // Частицы
-    particlesJS('particles-js', {
-        "particles": {
-            "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
-            "color": { "value": "#9d8ac7" },
-            "shape": { "type": "circle" },
-            "opacity": {
-                "value": 0.5,
-                "random": true,
-                "anim": { "enable": true, "speed": 1, "opacity_min": 0.1 }
-            },
-            "size": { "value": 3, "random": true },
-            "line_linked": {
-                "enable": true,
-                "distance": 150,
-                "color": "#7d6ba0",
-                "opacity": 0.4,
-                "width": 1
-            },
-            "move": {
-                "enable": true,
-                "speed": 2,
-                "direction": "none",
-                "random": true,
-                "straight": false,
-                "out_mode": "out"
-            }
-        },
-        "interactivity": {
-            "events": {
-                "onhover": { "enable": true, "mode": "repulse" }
-            }
-        }
-    });
+    
 
     // Анимации при скролле
     const animateElements = document.querySelectorAll('.animate-fade-up, .animate-fade-in, .animate-scale-in');

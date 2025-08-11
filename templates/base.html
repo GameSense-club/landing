@@ -17,6 +17,9 @@
 
     <!-- Подключение JS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="{{ url_for('static', filename='js/header.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/scrolling.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/fade.js') }}" defer></script>
     
     <!-- Подключение Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,7 +52,7 @@
             <h4>GameSense</h4>
         </a>
         <nav>
-            <a href="index.html" class="active">Главная</a>
+            <a href="/" class="active">Главная</a>
             <a href="https://game-sense.ru/price">Тарифы</a>
             <a href="#gallery">Галерея</a>
             <a href="#tournaments">Турниры</a>
@@ -59,7 +62,7 @@
     </header>
     
     <!-- Mobile Menu -->
-    <div class="mobile-menu mobile">
+<!--     <div class="mobile-menu mobile">
         <div class="mobile-menu-close">
             <i class="fas fa-times"></i>
         </div>
@@ -72,7 +75,7 @@
             <li><a href="#contact">Контакты</a></li>
         </ul>
         <a href="#" class="btn btn-primary">Забронировать</a>
-    </div>
+    </div> -->
 
     <main>
         {% block content %}{% endblock %}
