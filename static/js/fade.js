@@ -1,11 +1,12 @@
 (function() {
+    document.body.style.visibility = 'visible';
     const style = document.createElement('style');
     style.id = 'smooth-appear-styles'; // Добавляем ID для последующего удаления
     style.textContent = `
 .smooth-appear {
 opacity: 0;
 transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        cursor: none
+cursor: none
 }
 
 .smooth-appear.show {
@@ -47,7 +48,4 @@ opacity: 1;
         });
         document.body.style.cursor = 'default';
     }, maxDelay);
-    document.addEventListener('DOMContentLoaded', () => {
-        document.body.style.visibility = 'visible';
-    });
 })();
