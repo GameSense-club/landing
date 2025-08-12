@@ -12,10 +12,7 @@
 	gap: 20px;
 }
 
-.scrolled {
-	padding: 15px 0;
-	background-color: rgba(42, 42, 42, 0.98);
-}
+.scrolled {background-color: rgba(42, 42, 42, 0.98);}
 
 
 /*Мышка*/

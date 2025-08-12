@@ -5,6 +5,7 @@
 .smooth-appear {
 opacity: 0;
 transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        cursor: none
 }
 
 .smooth-appear.show {
@@ -44,8 +45,8 @@ opacity: 1;
         allElements.forEach(el => {
             el.classList.remove('smooth-appear', 'show');
         });
+        document.body.style.cursor = 'default';
     }, maxDelay);
-
     document.addEventListener('DOMContentLoaded', () => {
         document.body.style.visibility = 'visible';
     });
