@@ -14,7 +14,7 @@
 	box-shadow: var(--shadow);
 	transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	border: 1px solid var(--purple-medium);
-	max-width: 350px;
+	max-width: 370px;
 	gap: 10px;
 	display: flex;
 	flex-direction: column;
@@ -30,9 +30,9 @@
 	width: 100%;
 }
 
-#gallery .card{
+.card-image{
 	position: relative;
-    border-radius: 10px;
+    border-radius: 16px;
     overflow: hidden;
     max-width: 370px;
     width: auto;
@@ -41,6 +41,20 @@
     border: none;
 }
 
-#gallery .card img{
+.card-image .overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 20px;
+    color: white;
+    transform: translateY(100%);
+    transition: var(--transition);
+    box-sizing: border-box;
+}
+
+.card-image img{
 	width: 100%;
 }

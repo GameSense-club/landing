@@ -10,3 +10,15 @@
 0% { top: 5px; opacity: 1; }
 100% { top: 18px; opacity: 0; }
 }
+
+/* Анимация галереи */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
