@@ -6,6 +6,7 @@
 @import url("custom.css");
 @import url("icons.css");
 @import url("keyframes.css");
+@import url("menus.css");
 
 *{
 	padding: 0;
@@ -23,7 +24,7 @@ body{
 
 
 body>header {
-	z-index: 1000;
+	z-index: 100;
 	top: 0;
 	position: fixed;
 	padding: 20px;
@@ -110,7 +111,7 @@ footer .line{width: 40px}
 /*Текста*/
 p {color: var(--text-color); line-height: 1.6;}
 h5, h6{line-height: 1.6;s}
-h1, h2, h3, h4, h5, h6, a, button {color: var(--white);}
+h1, h2, h3, h4, h5, h6, a, button, .button {color: var(--white);}
 
 
 .normal{font-weight: normal;}
@@ -194,6 +195,7 @@ button, .button{
     border-color: none;
     border-image: none;
     border:none;
+    box-sizing: border-box;
 }
 
 .outline-button{

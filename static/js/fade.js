@@ -9,7 +9,7 @@ transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 cursor: none
 }
 
-.smooth-appear.show {
+.smooth-appear.show-fade {
 opacity: 1;
 }
     `;
@@ -27,7 +27,7 @@ opacity: 1;
 
     allElements.forEach((el, index) => {
         setTimeout(() => {
-            el.classList.add('show');
+            el.classList.add('show-fade');
         }, delay);
 
         delay += Math.max(20, baseDelay * Math.pow(speedMultiplier, index));
@@ -42,7 +42,7 @@ opacity: 1;
         }
 
         allElements.forEach(el => {
-            el.classList.remove('smooth-appear', 'show');
+            el.classList.remove('smooth-appear', 'show-fade');
         });
         document.body.style.cursor = 'default';
     }, maxDelay);

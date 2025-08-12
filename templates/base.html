@@ -20,6 +20,7 @@
     <script src="{{ url_for('static', filename='js/header.js') }}" defer></script>
     <script src="{{ url_for('static', filename='js/scrolling.js') }}" defer></script>
     <script src="{{ url_for('static', filename='js/fade.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/menus.js') }}" defer></script>
     
     <!-- Подключение Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,9 +34,10 @@
     <link rel="icon" href="{{ url_for('static', filename='image/ghonse.svg') }}" type="image/x-icon">
 
     <!-- Цвет темы -->
-    <meta name="theme-color" content="#19132E">
+    <meta name="theme-color" content="#2a2a2a">
 </head>
 <body style="visibility: hidden; cursor: none;">
+    {% include 'menus.html' %}
     <header>
         <a href="/" class="row">
             <img src="{{ url_for('static', filename='images/Ghonse.svg') }}" alt="logo">
@@ -49,6 +51,7 @@
             <a class="link" href="/promotions">Акции</a>
             <a class="link" href="#contact">Контакты</a>
         </nav>
+        <button data-menu="header" class="mobile"><h5 class="iconoir-menu"></h5></button>
     </header>
 
     <main>
