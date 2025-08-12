@@ -3,6 +3,7 @@
     --purple-medium: #5e4b8b;
     --purple-light: #7d6ba0;
     --purple-accent: #9d8ac7;
+    --purple-accent-glass: rgba(157, 138, 199, 0.2);
     --gray-dark: #2a2a2a;
     --gray-medium: #4a4a4a;
     --gray-light: #e0e0e0;
@@ -32,6 +33,7 @@
     align-items: center;
     text-align: center;
 }
+section.center>header{align-items: center;}
 
 .space{
     display: flex;

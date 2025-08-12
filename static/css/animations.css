@@ -51,7 +51,8 @@ button:hover::after, .button:hover::after {
     overflow: hidden;
     position: relative;
     transform: scale(1.02);
-    box-shadow: 0px 0px 20px 10px rgba(157, 138, 199, 0.2);
+    box-shadow: 0px 0px 20px 10px var(--purple-accent-glass);
+    border-color: var(--purple-accent);
 }
 
 .card::after {

@@ -53,6 +53,7 @@ main{
 	align-items: center;
 	padding: 0 20px;
 }
+body>main{	margin-top: 100px;}
 
 body>footer{
 	margin-top: 100px;
@@ -109,8 +110,7 @@ footer .line{width: 40px}
 
 
 /*Текста*/
-p {color: var(--text-color); line-height: 1.6;}
-h5, h6{line-height: 1.6;s}
+p {font-size:20px;color: var(--text-color); line-height: 1.6;}
 h1, h2, h3, h4, h5, h6, a, button, .button {color: var(--white);}
 
 
@@ -125,16 +125,29 @@ a.link{position: relative;}
 
 p>span{font-weight: normal;}
 
-.accent-text {
+.placeholder{
+	background: var(--gradient-purple);
+	border-radius: 16px;
+	padding: 8px 16px;
+}
+.gradient-text {
 	background: var(--gradient-purple);
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: transparent;
 }
-
+.accent-text{color: var(--purple-accent);}
 .gray-text{color: var(--gray-light);}
 .white-text{color: var(--white);}
 .orbitron{font-family:var(--font-heading)}
+.highlight{
+	background: var(--purple-accent-glass);
+	padding: 5px 10px;
+	border-radius: 4px;
+}
+
+.small{font-size: 1rem;}
+.smaller{font-size: smaller;}
 
 
 nav{cursor: pointer;}
@@ -150,7 +163,6 @@ section{
 
 section>header{
 	display: flex;
-	align-items: center;
 	flex-direction: column;
 }
 
