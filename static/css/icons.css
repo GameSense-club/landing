@@ -17,6 +17,9 @@
 	border-radius: 64px;
 	background: rgba(255, 255, 255, 0.1);
 	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 body>footer .icon-link{margin-right: 10px}

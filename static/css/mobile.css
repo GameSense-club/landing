@@ -1,3 +1,37 @@
-.mobile{
-	display: none;
+@media (max-width: 800px) {
+	h1 { font-size: 40px;}
+	h2 {font-size: 32px;}
+	h3 {font-size: 24px;}
+	h4 {font-size: 20px;}
+	h5 {font-size: 16px;}
+	h6 {font-size: 14px;}
+
+	body>header{
+		left: 0; /* Добавьте это */
+		right: 0; /* Добавьте это */
+		width: 100%; /* Вместо max-width */
+		-webkit-transform: translateZ(0); /* Для мобильных браузеров */
+		transform: translateZ(0);
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+
+	body>header nav{
+		display: none;
+	}
+
+	body>footer{padding: 80px 20px}
+	body>footer>.space{flex-direction: column;}
+	body>footer>div>div{margin: 20px 0}
+
+	section{margin: 50px 0}
+
+	.card{
+		max-width: 100%;
+		width: 100%;
+	}
+	.card-image{
+		max-width: 100%;
+		width: 100%;
+	}
 }

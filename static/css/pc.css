@@ -1,0 +1,26 @@
+@media (min-width: 801px) {
+	h1 { font-size: 64px; }
+	h2 { font-size: 48px; }
+	h3 { font-size: 32px; }
+	h4 { font-size: 26px; }
+	h5 { font-size: 20px; }
+	h6 { font-size: 16px; }
+
+	body>header nav>a{
+		font-size: 16px;
+		padding: 0 20px;
+	}
+	body>header{
+		width: 100%;
+		max-width: 1200px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	body>footer{
+		padding: 80px;
+	}
+
+	.card{max-width: 370px;}
+	.card-image{max-width: 370px;}
+}
