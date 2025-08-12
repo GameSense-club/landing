@@ -5,6 +5,7 @@
 @import url("cards.css");
 @import url("static2.css");
 @import url("icons.css");
+@import url("keyframes.css");
 
 *{
 	padding: 0;
@@ -17,6 +18,8 @@ body{
 	background-color: var(--bg-color);
 	visibility: hidden;
 }
+
+
 
 body>header {
 	z-index: 1000;
@@ -44,6 +47,7 @@ body>header nav>a{
 	font-size: 16px;
 	padding: 0 20px;
 }
+
 
 
 main{
@@ -101,6 +105,8 @@ footer::before {
 
 footer .line{width: 40px}
 
+
+
 .line{
 	min-width: 80px;
 	height: 3px;
@@ -123,6 +129,12 @@ h6 { font-size: 16px; }
 .normal{font-weight: normal;}
 
 a{text-decoration: none;}
+a.active {
+  color: var(--purple-accent);
+}
+
+a.link{position: relative;}
+
 p>span{font-weight: normal;}
 
 .accent-text {

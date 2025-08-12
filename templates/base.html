@@ -35,7 +35,7 @@
     <!-- Цвет темы -->
     <meta name="theme-color" content="#19132E">
 </head>
-<body>
+<body style="visibility: hidden;">
     <!-- Preloader -->
     <div class="preloader">
         <div class="loader">
@@ -52,30 +52,14 @@
             <h4>GameSense</h4>
         </a>
         <nav>
-            <a href="/" class="active">Главная</a>
-            <a href="https://game-sense.ru/price">Тарифы</a>
-            <a href="#gallery">Галерея</a>
-            <a href="#tournaments">Турниры</a>
-            <a href="/promotions">Акции</a>
-            <a href="#contact">Контакты</a>
+            <a class="link" href="/">Главная</a>
+            <a class="link" href="https://game-sense.ru/price">Тарифы</a>
+            <a class="link" href="#gallery">Галерея</a>
+            <a class="link" href="#tournaments">Турниры</a>
+            <a class="link" href="/promotions">Акции</a>
+            <a class="link" href="#contact">Контакты</a>
         </nav>
     </header>
-    
-    <!-- Mobile Menu -->
-<!--     <div class="mobile-menu mobile">
-        <div class="mobile-menu-close">
-            <i class="fas fa-times"></i>
-        </div>
-        <ul>
-            <li><a href="index.html" class="active">Главная</a></li>
-            <li><a href="#pricing">Тарифы</a></li>
-            <li><a href="#gallery">Галерея</a></li>
-            <li><a href="#tournaments">Турниры</a></li>
-            <li><a href="#promo">Акции</a></li>
-            <li><a href="#contact">Контакты</a></li>
-        </ul>
-        <a href="#" class="btn btn-primary">Забронировать</a>
-    </div> -->
 
     <main>
         {% block content %}{% endblock %}
