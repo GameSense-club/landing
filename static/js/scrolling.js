@@ -28,4 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
             behavior: 'smooth'
         });
     });
-})
+})<script>
+alert("fdjsfa");
+</script>
