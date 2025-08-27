@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const mobileMenu = document.querySelector('.mobile-menu');
     const mobileMenuClose = document.querySelector('.mobile-menu-close');
+    const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
     
     mobileMenuBtn.addEventListener('click', function() {
         mobileMenu.classList.add('active');
@@ -24,21 +25,28 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = '';
     });
 
-    // Плавная прокрутка
+    // Закрывать мобильное меню при клике по любой ссылке
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
+
+    // Плавная прокрутка (только если цель существует)
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-            
+
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
+                e.preventDefault();
                 window.scrollTo({
                     top: targetElement.offsetTop - 80,
                     behavior: 'smooth'
                 });
-                
+
                 // Закрываем мобильное меню если открыто
                 mobileMenu.classList.remove('active');
                 document.body.style.overflow = '';
