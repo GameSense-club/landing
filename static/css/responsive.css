@@ -39,8 +39,5 @@
 
     .gallery-grid {
         grid-template-columns: 1fr;
-        align-items: center;
-        justify-content: space-between;
-        grid-auto-flow: column;
     }
 }
