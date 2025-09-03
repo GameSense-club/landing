@@ -99,4 +99,18 @@
     color: var(--purple-accent);
 }
 
+.ip-info {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 10px 0;
+}
+
+.ip-info p {
+    margin: 2px 0;
+}
+
+.ip-info strong {
+    color: var(--purple-accent);
+}
+
 
