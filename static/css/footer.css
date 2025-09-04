@@ -113,4 +113,19 @@
     color: var(--purple-accent);
 }
 
+@media (max-width: 768px) {
+    .ip-info {
+        order: 2;
+        margin: 5px 0;
+    }
+    
+    .footer-link {
+        order: 3;
+    }
+    
+    .footer-bottom p:first-child {
+        order: 1;
+    }
+}
+
 
